@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="Img/Discapacitados.jpg">
+	<link rel="stylesheet" type="text/css" href="CSS/Accesibilidad.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Responsive.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Img.css">
+	<title>Transformando ideas en acciones</title>
+</head>
+	<header>
+		<nav>
+            <ul>
+            	<img src="Img/Situación Retadora.png">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <!-- Opciones de accesibilidad -->
+                <li><button onclick="toggleContrast()">Contraste Alto</button></li>
+                <li><button onclick="increaseTextSize()">Aumentar Tamaño de Texto</button></li>
+                <li><button onclick="toggleReaderMode()">Modo Lector</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cuerpo de la página -->
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a Transformando ideas en acciones</h1>
+            <p id="welcome-text">Somos una plataforma inclusiva diseñada para todos.</p>
+            <button onclick="readText('welcome-text')">Leer en Voz Alta</button>
+        </section>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <h3><b>Misión:</b></h3>
+            <div class="servicio">
+                <p>Instalar tecnologias en los rincones más apartados del país para que la población más vulnerable tenga acceso a educación y fortalezca su uso,   para una mejor toma de desiciones mediante el conocimiento de las necesidades reales de la población, su solución, eliminar la corrupción y  y tener una sociedad en paz. .</p>
+            </div>
+            <h4><b>Visión:</b></h4>
+            <div class="servicio">
+                <p>Mediante la tecnología se adaptaran a un mundo donde tendrán la oportunidad de desarrollar vínculos con otras personas, y mediante plataformas como Microsoft Teams podrán integrarse de manera efectiva, siendo un gran apoyo emocional..</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" aria-label="Nombre completo">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" aria-label="Correo electrónico">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" aria-label="Escribe tu mensaje aquí"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        	<p>&copy; 2024 Transformando ideas en acciones. Todos los derechos reservados.</p>
+        	<a href="#feedback">Enviar retroalimentación</a>
+    	</footer>
+    	<!-- Scripts para accesibilidad -->
+    	<script src="JavaScript/Accesibilidad.js"></script>
+	</body>
+</html>
